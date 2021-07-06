@@ -1,74 +1,53 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>divyansh's Personal Site</title>
+<head>
+<title>
+sign up
+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hero">
+       <div class="form-box">
+	<div class="button-box">
+	    <div id="btn"></div>
+	     <button type="button" class="toggle-btn" onclick="login()">log-in</button>
+	     <button type="button" class="toggle-btn"onclick="register()">register</button>
+	</div>
+	<div class="social-icons">
+	     <img src="https://hosting.photobucket.com/images/i/divyansh2007/fb.png?width=1920&height=1080&fit=bounds">
+	      <img src="https://hosting.photobucket.com/images/i/divyansh2007/tw.png?width=1920&height=1080&fit=bounds">
+	      <img src="https://hosting.photobucket.com/images/i/divyansh2007/gp.png?width=1920&height=1080&fit=bounds">
+	</div>
+	<form action="send.php" id="login"class="input-group">
+	         <input type="text" class="input-field" name="name" placeholder="user id" required>
+	          <input type="text" class="input-field" placeholder="enter password" required>
+	           <input type="checkbox" class="check-box"><span>remember password</span>
+	           <button type="submit" class="submit-btn">log in</button>
+	</form>
+	<form action="send.php" id="register" class="input-group">
+	         <input type="text" class="input-field" placeholder="user id" required>
+	          <input type="email" class="input-field" placeholder="Email id" required>
+	          <input type="text" class="input-field" placeholder="enter password" required>
+	           <input type="checkbox" class="check-box"><span>i agree to the terms and conditions</span>
+	           <button type="submit" class="submit-btn">register</button>
+	</form>
+      </div>
+</div>
+<script>
+var x= document.getElementById("login");
+var y= document.getElementById("register");
+var z= document.getElementById("btn");
+function register(){
+	x.style.left="-400px";
+	y.style.left="50px";
+	z.style.left="110px";
+}
+function login(){
+	x.style.left="50px";
+	y.style.left="450px";
+	z.style.left="0";
 
-  </head>
-
-  <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="#" alt="divyansh profile picture"></td>
-        <td><h1>divyansh garg</h1>
-        <p><em>student of s.j.c <strong><a href="https://www.appbrewery.co/">The App Brewery</a></strong>.</em></p>
-        <p>I am an iOS and Web Developer</p></td>
-      </tr>
-    </table>
-    <hr>
-    <h3>Books and Teaching</h3>
-    <ul>
-      <li>The Complete iOS App Development Bootcamp</li>
-      <li>The Complete Web Development Bootcamp</li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2009-2010</td>
-          <td>student at s.j.c</td>
-        </tr>
-        <tr>
-          <td>2010-2013</td>
-          <td>student of sjc</td>
-        </tr>
-        <tr>
-          <td>2013-2015</td>
-          <td>studdent of sjc</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>iOS Development</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>Web Development</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-       <tr>
-        <td>Programming</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>drawing</td>
-        <td>⭐️⭐️</td>
-      </tr>
-    </table>
-    <hr>
-    <a href="science.html">My Hobbies</a>
-    <a href="maths.html">Contact Me</a>
-    <a href="english.html">english</a>
-    <a href="learn-cbsc.html">welcome page</a>
-  </body>
+}
+</script>
+</body>
 </html>
